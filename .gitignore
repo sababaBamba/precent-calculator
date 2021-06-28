@@ -1,52 +1,19 @@
-# Prerequisites
-*.d
+#include <stdio.h>
+#include <stdlib.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+int main()
+{
+    int sum;
+    double p , x;
 
-# Linker output
-*.ilk
-*.map
-*.exp
+    printf("enter the sum:");
+    scanf("%d" , &sum);
+    printf("enter the number of percents:");
+    scanf("%lf" , &p);
 
-# Precompiled Headers
-*.gch
-*.pch
+    p = p / 100;
+    x = p * sum;
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+    printf("%.lf", x);
+    return 0;
+}
